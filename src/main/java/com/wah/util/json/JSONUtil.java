@@ -18,10 +18,18 @@ import org.json.JSONException;
 public final class JSONUtil {
 
   /**
+   * Private constructor
+   * We don't want to instantiate this class
+   */
+  private JSONUtil() {
+  }
+
+  /**
    * Convert JSONObject to Map<String, Object>
    * @param JSONObject
    * @return Map
    * @author souravupadhyay
+   * @exception JSONException
    */
   public static Map<String, Object> toMap(JSONObject object) throws JSONException {
     Map<String, Object> map = new HashMap<String, Object>();
@@ -45,6 +53,7 @@ public final class JSONUtil {
    * @param JSONArray
    * @return List
    * @author souravupadhyay
+   * @exception JSONException
    */
   public static List<Object> toList(JSONArray array) throws JSONException {
     List<Object> list = new ArrayList<Object>();

@@ -6,6 +6,6 @@ Classes
 -------
 JSONUtil
 ```
-JSONUtil.toMap(JSONObject)
-JSONUtil.toList(JSONObject)
+Map<String, Object> JSONUtil.toMap(JSONObject)
+List<Object> JSONUtil.toList(JSONObject)
 ```
